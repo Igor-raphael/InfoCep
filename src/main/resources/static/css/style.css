@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+:root{
+   --mainColor: #f4f6f9;
+   --textFont: 'Roboto', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--mainColor); 
+}
+
+.titulo p{
+    color: rgb(34, 74, 185);
+    display: flex;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    font-size: 170px;
+}
+
+
+.InputCep{
+    position: relative;
+    display: flex;
+    width: 100%;
+    background-color: var(--mainColor);  
+    justify-content: center;
+    align-items: center;
+    font-family: var(--textFont);
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+
+
+.InputCep input{
+ width: 55%;
+ height: 35px;
+ font-size: 20px;
+ font-weight: 500;
+ background-color: var(--mainColor);
+}
+
+.InputCep input::placeholder{
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+
+.InputCep button{
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+    border-radius: 50%;
+    margin-left: 30px;
+    transform: translate(-40%, -20%);
+}
+
+.InputCep button:hover{
+    color: rgb(229, 255, 0);
+    background: rgb(31, 190, 31);
+}
+
+@media (max-width: 550px) {
+    .titulo p{
+        font-size: 110px;
+    }
+
+    .InputCep{
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+}
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+   <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>InfoCep</title>
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" th:href="@{/css/resultStyle.css}">
+    </head>
+  <body>
+         
+        
+
+        <div class="titulo">
+            <p>InfoCep</p>
+         </div>
+
+            
+            <div class="aviso">
+         <p>O seguinte CEP: <span th:text="${cep}"></span> não existe no Brasil! </p>
+         <p><br  />Inicie uma nova pesquisa.</p>
+        </div> 
+
+
+         <div class="dadosCep">
+            <ul class="list">
+                <li>CEP: <span class="result" th:text="${resultado.getCep()}"></span></li>
+                <li>Logradouro: <span class="result" th:text="${resultado.getLogradouro()}"></span></li>
+                <li>Complemento: <span class="result" th:text="${resultado.getComplemento()}"></span></li>
+                <li>Unidade: <span class="result" th:text="${resultado.getUnidade()}"></span></li>
+                <li>Bairro: <span class="result" th:text="${resultado.getBairro()}"></span></li>
+                <li>Localidade: <span class="result" th:text="${resultado.getLocalidade()}"></span></li>
+                <li>UF: <span class="result" th:text="${resultado.getUf()}"></span></li>
+                <li>IBGE: <span class="result" th:text="${resultado.getIbge()}"></span></li>
+                <li>Dia: <span class="result" th:text="${resultado.getDia()}"></span></li>
+                <li>DDD: <span class="result" th:text="${resultado.getDdd()}"></span></li>
+                <li>Siafi: <span class="result" th:text="${resultado.getSiafi()}"></span></li>
+            </ul>
+        
+              <form th:action="@{/}" method="get">
+                <button type="submit">Nova pesquisa</button>
+            </form>
+            </div>
+
+    
+
+      <script th:src="@{/js/script.js}"></script>
+      
+    
+    </body>
+</html>
