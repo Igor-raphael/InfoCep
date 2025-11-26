@@ -13,6 +13,13 @@ O **InfoCep** é uma aplicação simples que permite aos usuários consultar inf
 - [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 
+## Deploy 
+ 
+A aplicação está disponível publicamente no link abaixo:
+
+🔗 **InfoCep** — https://infocep.onrender.com
+
+Você pode acessar, realizar buscas de CEP e visualizar o retorno em tempo real diretamente pela interface.
 
 ## Práticas adotadas
 
