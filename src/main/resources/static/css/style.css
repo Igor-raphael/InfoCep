@@ -26,46 +26,58 @@ body{
     color: rgb(34, 74, 185);
     display: flex;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
-    font-size: 170px;
+    font-size: clamp(6.5rem, 12vw, 15rem);
 }
 
 
 .InputCep{
-    position: relative;
-    display: flex;
-    width: 100%;
-    background-color: var(--mainColor);  
-    justify-content: center;
-    align-items: center;
-    font-family: var(--textFont);
-    font-size: 20px;
+    font-size: 1.4rem;
     font-weight: bold;
+    padding: 1.5rem 1rem;
+    border-radius: 1.25rem;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.20);
+
+    display: inline-block;
+    text-align: center;
     
 }
 
+form {
+    text-align: center;
+}
+
+label{
+    margin-right: 6.7rem;
+}
 
 
 .InputCep input{
  width: 55%;
- height: 35px;
- font-size: 20px;
+ height: 2.2rem;
+ font-size: 1.25rem;
  font-weight: 500;
+ margin-right: 1.2rem;
  background-color: var(--mainColor);
 }
 
 .InputCep input::placeholder{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
     
 }
 
 .InputCep button{
     cursor: pointer;
-    width: 45px;
-    height: 45px;
-    font-size: 18px;
+    width: 2.8rem;
+    height: 2.8rem;
+    font-size: 1.1rem;
     border-radius: 50%;
-    margin-left: 30px;
     transform: translate(-40%, -20%);
 }
 
@@ -74,14 +86,11 @@ body{
     background: rgb(31, 190, 31);
 }
 
-@media (max-width: 550px) {
-    .titulo p{
-        font-size: 110px;
-    }
+@media (max-width: 380px) {
 
     .InputCep{
-        font-size: 25px;
-        font-weight: bold;
+        font-size: 1.4rem;
+        padding: 1.5rem 0rem;
     }
 
 }
