@@ -63,6 +63,7 @@ body{
     justify-content: center;
     margin-bottom: 13px;
     list-style: none;
+    scale: 1.05;
 }
 
 .list span {
@@ -82,11 +83,18 @@ body{
     width: 150px;
     max-width: 400px;
     margin: 0 auto;
-    height: 30px;
+    height: 35px;
     background-color: white;
     color: #3498db;
     border: 2px solid #3498db;
+    border-radius: 10px;
+    margin-bottom: 1rem;
     
+    &.btn:hover{
+        scale: 1.05;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.30);
+    }
+
 }
 
 @media (max-width: 1900px){
