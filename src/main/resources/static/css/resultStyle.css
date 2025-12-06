@@ -47,11 +47,15 @@ body{
 .dadosCep{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 
 }
 
 .list{
 	padding-bottom: 50px;
+
 }
 
 .list li{
@@ -63,8 +67,11 @@ body{
     justify-content: center;
     margin-bottom: 13px;
     list-style: none;
-    scale: 1.05;
 }
+
+.list li:hover{
+    scale: 1.10;
+} 
 
 .list span {
         padding-left: 40px;
